@@ -3,8 +3,8 @@
   margin: 0 60px;
 
   @media (max-width: 1000px) {
+    margin: 0 auto;
     width: 100%;
-    margin: 0;
   }
 
   &__title {
@@ -21,6 +21,10 @@
     line-height: 78px;
     margin-right: 20px;
     animation: text-move ease-out 1s;
+
+    @media (max-width: 1250px) {
+      font-size: 60px;
+    }
 
     @media (max-width: 1000px) {
       font-size: 32px;
@@ -52,8 +56,11 @@
     position: relative;
     z-index: 1;
 
+    @media (max-width: 1250px) {
+      font-size: 22px;
+    }
+
     @media (max-width: 1000px) {
-      font-size: 20px;
       line-height: normal;
       text-align: center;
     }
@@ -67,4 +74,14 @@
   to {
     transform: translateY(0);
   }
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
 }

@@ -46,16 +46,16 @@ export const Menu: FC = () => {
         <nav className="menu__nav">
           <ul className="menu__nav-list">
             <li className="menu__nav-item">
-              <LinkItem to="home">Головна</LinkItem>
+              <LinkItem to="home" onClick={() => setIsMenu(false)}>Головна</LinkItem>
             </li>
             <li className="menu__nav-item">
-              <LinkItem to="about-us">Про нас</LinkItem>
+              <LinkItem to="about-us" onClick={() => setIsMenu(false)}>Про нас</LinkItem>
             </li>
             <li className="menu__nav-item">
-              <LinkItem to="our-team">Наша команда</LinkItem>
+              <LinkItem to="our-team" onClick={() => setIsMenu(false)}>Наша команда</LinkItem>
             </li>
             <li className="menu__nav-item">
-              <LinkItem to="contacts">Контакти</LinkItem>
+              <LinkItem to="contacts" onClick={() => setIsMenu(false)}>Контакти</LinkItem>
             </li>
           </ul>
         </nav>

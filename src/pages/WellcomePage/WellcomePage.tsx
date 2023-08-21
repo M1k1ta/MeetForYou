@@ -9,10 +9,12 @@ import { Hearts } from "../../components/Hearts";
 export const WellcomePage: FC = () => {
   return (
     <main className="main">
-      <Hearts />
-      <BackgroundLine />
-      <BackgroundTree />
-      <BackgroundPeople />
+      <div className="background">
+        <Hearts />
+        <BackgroundLine />
+        <BackgroundTree />
+        <BackgroundPeople />
+      </div>
 
       <section className="wellcome">
         <div className="wellcome__title">

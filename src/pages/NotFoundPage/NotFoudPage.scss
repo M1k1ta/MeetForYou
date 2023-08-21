@@ -1,0 +1,34 @@
+.not-found-page {
+  &__title {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 10px;
+  }
+
+  &__status {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30vh;
+    color: rgba($color: #000, $alpha: 0.3);
+  }
+
+  &__button {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 200px;
+    padding: 20px 0;
+    background-color: #f93064;
+    border: 2px solid #f93064;
+    font-weight: 600;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 300ms, color 300ms;
+
+    &:hover {
+      background-color: #fff;
+      color: #f93064;
+    }
+  }
+}

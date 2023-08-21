@@ -4,12 +4,12 @@
   bottom: 0;
   animation: tree-move ease-out 1s;
 
-  @media (max-width: 1400px) {
-    width: 444px;
+  @media (max-width: 1450px) {
+    width: 450px;
     height: 464px;
   }
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1250px) or (max-height: 800px) {
     width: 344px;
     height: 364px;
   }

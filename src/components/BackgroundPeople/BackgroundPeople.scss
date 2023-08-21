@@ -5,14 +5,14 @@
   transform: translate(1px, 1px);
   animation: bench-move ease-out 1s;
 
-  @media (max-width: 1400px) {
-    width: 925px;
-    height: 509px;
+  @media (max-width: 1450px) {
+    width: 850px;
+    height: 500px;
   }
 
-  @media (max-width: 1300px) {
-    width: 825px;
-    height: 409px;
+  @media (max-width: 1250px) or (max-height: 800px) {
+    width: 670px;
+    height: 400px;
   }
 
   @media (max-width: 1000px) {

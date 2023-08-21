@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { WellcomePage } from './pages/WellcomePage';
 import { Header } from './components/Header';
+import { NotFoundPage } from './pages/NotFoundPage';
 
 export const App: FC = () => {
   return (
@@ -11,7 +12,7 @@ export const App: FC = () => {
       <Routes>
         <Route path="/" element={<WellcomePage />} />
 
-        <Route path="*" element={<h1>Not found page</h1>} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>
   );

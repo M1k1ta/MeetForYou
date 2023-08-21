@@ -7,10 +7,9 @@ html {
 }
 
 body {
-  overflow: hidden;
 }
 
-body, ul, li, h1, p {
+body, ul, li, h1, h2, p {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -18,6 +17,7 @@ body, ul, li, h1, p {
 
 @import "./App.scss";
 @import "./pages/WellcomePage/WellcomePage.scss";
+@import "./pages//NotFoundPage/NotFoudPage.scss";
 
 @import "./components/Header/Header.scss";
 @import "./components/LinkItem/LinkItem.scss";

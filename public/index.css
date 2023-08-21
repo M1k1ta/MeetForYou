@@ -6,11 +6,7 @@ html {
   font-family: "Montserrat Alternates", sans-serif;
 }
 
-body {
-  overflow: hidden;
-}
-
-body, ul, li, h1, p {
+body, ul, li, h1, h2, p {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -18,8 +14,6 @@ body, ul, li, h1, p {
 
 .container {
   padding: 30px 60px;
-  height: 100vh;
-  width: 100vw;
 }
 @media (max-width: 1000px) {
   .container {
@@ -33,8 +27,8 @@ body, ul, li, h1, p {
 }
 @media (max-width: 1000px) {
   .wellcome {
+    margin: 0 auto;
     width: 100%;
-    margin: 0;
   }
 }
 .wellcome__title {
@@ -50,6 +44,11 @@ body, ul, li, h1, p {
   line-height: 78px;
   margin-right: 20px;
   animation: text-move ease-out 1s;
+}
+@media (max-width: 1250px) {
+  .wellcome__h1 {
+    font-size: 60px;
+  }
 }
 @media (max-width: 1000px) {
   .wellcome__h1 {
@@ -81,9 +80,13 @@ body, ul, li, h1, p {
   position: relative;
   z-index: 1;
 }
+@media (max-width: 1250px) {
+  .wellcome__text {
+    font-size: 22px;
+  }
+}
 @media (max-width: 1000px) {
   .wellcome__text {
-    font-size: 20px;
     line-height: normal;
     text-align: center;
   }
@@ -97,6 +100,46 @@ body, ul, li, h1, p {
     transform: translateY(0);
   }
 }
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.not-found-page__title {
+  text-align: center;
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+.not-found-page__status {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30vh;
+  color: rgba(0, 0, 0, 0.3);
+}
+.not-found-page__button {
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 200px;
+  padding: 20px 0;
+  background-color: #f93064;
+  border: 2px solid #f93064;
+  font-weight: 600;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 300ms, color 300ms;
+}
+.not-found-page__button:hover {
+  background-color: #fff;
+  color: #f93064;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -104,9 +147,9 @@ body, ul, li, h1, p {
   height: 60px;
   margin-bottom: 115px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1250px) {
   .header {
-    margin-bottom: 100px;
+    margin-bottom: 95px;
   }
 }
 @media (max-width: 1000px) {
@@ -126,7 +169,7 @@ body, ul, li, h1, p {
   display: flex;
   gap: 30px;
 }
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   .nav__list {
     gap: 20px;
   }
@@ -158,13 +201,14 @@ body, ul, li, h1, p {
 .nav-link:hover {
   color: #656565;
 }
-@media (max-width: 1150px) and (min-width: 1000px) {
+@media (max-width: 1200px) and (min-width: 1000px) {
   .nav-link {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 .form {
+  position: relative;
   z-index: 1;
 }
 @media (max-width: 1000px) {
@@ -489,7 +533,7 @@ body, ul, li, h1, p {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: inherit;
+  background-color: #fff;
   transform: translateX(100%);
 }
 
@@ -558,16 +602,16 @@ body, ul, li, h1, p {
   transform: translate(1px, 1px);
   animation: bench-move ease-out 1s;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1450px) {
   .people {
-    width: 925px;
-    height: 509px;
+    width: 850px;
+    height: 500px;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1250px) or (max-height: 800px) {
   .people {
-    width: 825px;
-    height: 409px;
+    width: 670px;
+    height: 400px;
   }
 }
 @media (max-width: 1000px) {
@@ -592,13 +636,13 @@ body, ul, li, h1, p {
   bottom: 0;
   animation: tree-move ease-out 1s;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1450px) {
   .tree {
-    width: 444px;
+    width: 450px;
     height: 464px;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1250px) or (max-height: 800px) {
   .tree {
     width: 344px;
     height: 364px;
