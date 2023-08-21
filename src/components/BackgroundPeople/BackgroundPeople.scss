@@ -1,0 +1,32 @@
+.people {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(1px, 1px);
+  animation: bench-move ease-out 1s;
+
+  @media (max-width: 1400px) {
+    width: 925px;
+    height: 509px;
+  }
+
+  @media (max-width: 1300px) {
+    width: 825px;
+    height: 409px;
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+@keyframes bench-move {
+  from {
+    transform: translate(340px, 20px);
+    opacity: 0.4;
+  }
+  to {
+    transform: translate(1px, 1px);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,36 @@
+.line {
+  z-index: -1;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.vector1 {
+  position: absolute;
+  top: 0;
+  right: 160px;
+  animation: line-move ease-out 1s;
+}
+
+.vector2 {
+  position: absolute;
+  top: 0;
+  right: 180px;
+  animation: line-move ease-out 1s;
+}
+
+.vector3 {
+  position: absolute;
+  top: 25px;
+  right: 235px;
+}
+
+@keyframes line-move {
+  from {
+    transform: translate(10px, 10px);
+  }
+  to {
+    transform: translate(0px, 0px);
+  }
+}

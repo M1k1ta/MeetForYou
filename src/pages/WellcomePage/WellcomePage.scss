@@ -1,0 +1,70 @@
+.wellcome {
+  max-width: 805px;
+  margin: 0 60px;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    margin: 0;
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__h1 {
+    color: #333333;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    margin-right: 20px;
+    animation: text-move ease-out 1s;
+
+    @media (max-width: 1000px) {
+      font-size: 32px;
+      margin: auto;
+      line-height: normal;
+      text-align: center;
+    }
+  }
+
+  &__bird {
+    padding-top: 10px;
+
+    @media (max-width: 1000px) {
+      padding: 0;
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__text {
+    color: #b3b3b3;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 50px;
+    animation: text-move ease-out 1s;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 1000px) {
+      font-size: 20px;
+      line-height: normal;
+      text-align: center;
+    }
+  }
+}
+
+@keyframes text-move {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

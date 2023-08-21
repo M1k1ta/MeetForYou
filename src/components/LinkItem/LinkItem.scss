@@ -1,0 +1,16 @@
+.nav-link {
+  text-decoration: none;
+  color: #909090;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  transition: color 300ms;
+
+  &:hover {
+    color: #656565;
+  }
+
+  @media (max-width: 1150px) and (min-width: 1000px) {
+    font-size: 16px;
+  }
+}

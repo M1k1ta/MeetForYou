@@ -1,0 +1,54 @@
+.menu {
+  display: none;
+
+  @media (max-width: 1000px) {
+    display: block;
+  }
+
+  &__button {
+    background-color: inherit;
+    border: none;
+  }
+
+  &__box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    background-color: #fff;
+    padding: 30px;
+    transition: transform 1s;
+    transform: translate(100vw, -100vh);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 20vh;
+  }
+
+  &__close {
+    background-color: inherit;
+    border: none;
+  }
+
+  &__nav-item {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  &__instagram {
+    width: 26px;
+    height: 26px;
+    margin: auto;
+  }
+}
+
+.menu--active {
+  transform: translate(0, 0);
+}

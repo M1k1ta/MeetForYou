@@ -1,0 +1,26 @@
+.instagram {
+  display: flex;
+
+  &__anim {
+    width: 26px;
+    height: 26px;
+    animation: instagram-show ease-out 1s;
+  }
+
+  &__white-block {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: inherit;
+    transform: translateX(100%);
+  }
+}
+
+@keyframes instagram-show {
+from {
+  transform: translateX(100%);
+}
+to {
+  transform: translateX(0);
+}
+}

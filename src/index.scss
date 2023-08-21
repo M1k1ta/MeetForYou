@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+body, ul, li, h1, p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@import "./App.scss";
+@import "./pages/WellcomePage/WellcomePage.scss";
+
+@import "./components/Header/Header.scss";
+@import "./components/LinkItem/LinkItem.scss";
+@import "./components/Form/Form.scss";
+@import "./components/AnimatedLogo/AnimatedLogo.scss";
+@import "./components/Bird/Bird.scss";
+@import "./components/Hearts/Hearts.scss";
+@import "./components/AnimatedInstagram/AnimatedInstagram.scss";
+@import "./components/Menu/Menu.scss";
+
+@import "./components/BackgroundPeople/BackgroundPeople.scss";
+@import "./components/BackgroundTree/BackgroundTree.scss";
+@import "./components/BackgroundLine/BackgroundLine.scss";

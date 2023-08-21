@@ -1,0 +1,12 @@
+.bird {
+  animation: bird-move ease-out 1s;
+}
+
+@keyframes bird-move {
+  from {
+    transform: translateX(-30px) scale(10%);
+  }
+  to {
+    transform: translateX(0) scale(100%);
+  }
+}

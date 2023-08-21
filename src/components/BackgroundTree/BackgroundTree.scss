@@ -1,0 +1,31 @@
+.tree {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  animation: tree-move ease-out 1s;
+
+  @media (max-width: 1400px) {
+    width: 444px;
+    height: 464px;
+  }
+
+  @media (max-width: 1300px) {
+    width: 344px;
+    height: 364px;
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+@keyframes tree-move {
+  from {
+    transform: translateY(100px);
+    opacity: 0.4;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,106 @@
+.hearts {
+  position: absolute;
+  bottom: 21vh;
+  right: 8vw;
+  width: 65%;
+  height: 60%;
+  z-index: -1;
+
+  @media (max-width: 1000px) {
+    width: 367px;
+    height: 776px;
+    // top: 128px;
+    // right: 40px;
+    // left: 22px;
+    // bottom: 28px;
+  }
+}
+
+.heart1 {
+  position: absolute;
+  bottom: 195px;
+  left: 150px;
+  animation: heart-size-change 1s linear;
+
+  @media (max-width: 1000px) {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.heart2 {
+  position: absolute;
+  right: 0;
+  bottom: 485px;
+  animation: heart-size-change 1s linear;
+
+  @media (max-width: 1000px) {
+    bottom: 0;
+  }
+}
+
+.heart3 {
+  position: absolute;
+  bottom: 420px;
+  right: 180px;
+  animation: heart-size-change 1s linear;
+
+  @media (max-width: 1000px) {
+    left: 26px;
+    bottom: 322px;
+  }
+}
+
+.heart4 {
+  position: absolute;
+  bottom: 220px;
+  left: 0;
+  animation: heart-size-change 1s linear;
+
+  @media (max-width: 1000px) {
+    left: 70px;
+    bottom: 48px;
+  }
+}
+
+.heart5 {
+  position: absolute;
+  top: 0;
+  right: 450px;
+  animation: heart-rotate-change 1s linear;
+
+  @media (max-width: 1000px) {
+    right: 70px;
+    bottom: 340px;
+  }
+}
+
+.heart6 {
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  animation: heart-rotate-change 1s linear;
+
+  @media (max-width: 1000px) {
+    top: 0;
+    right: 16px;
+  }
+}
+
+@keyframes heart-rotate-change {
+  from {
+    transform: scale(0) rotateY(0.5turn);
+  }
+  to {
+    transform: scale(100%) rotateY(0turn);
+  }
+}
+
+@keyframes heart-size-change {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(100%);
+  }
+}

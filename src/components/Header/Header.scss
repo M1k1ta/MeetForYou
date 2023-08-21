@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 115px;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 100px;
+  }
+
+
+
+  &__instagram {
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+}
+
+.nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: nav-move 1s ease-out;
+  z-index: 1;
+
+  &__list {
+    display: flex;
+    gap: 30px;
+
+    @media (max-width: 1150px) {
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+@keyframes nav-move {
+  from {
+    transform: translate(-50%, -80px);
+    opacity: 0.4;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
