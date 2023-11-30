@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/MeetForYou/static/js/main.7f9f393a.js",
+    "static/js/787.dadff92f.chunk.js": "/MeetForYou/static/js/787.dadff92f.chunk.js",
+    "index.html": "/MeetForYou/index.html",
+    "main.7f9f393a.js.map": "/MeetForYou/static/js/main.7f9f393a.js.map",
+    "787.dadff92f.chunk.js.map": "/MeetForYou/static/js/787.dadff92f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.7f9f393a.js"
+  ]
+}
