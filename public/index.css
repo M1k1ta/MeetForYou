@@ -45,9 +45,9 @@ body, ul, li, h1, h2, p {
   margin-right: 20px;
   animation: text-move ease-out 1s;
 }
-@media (max-width: 1250px) {
+@media (max-height: 800px) {
   .wellcome__h1 {
-    font-size: 60px;
+    font-size: 56px;
   }
 }
 @media (max-width: 1000px) {
@@ -80,9 +80,9 @@ body, ul, li, h1, h2, p {
   position: relative;
   z-index: 1;
 }
-@media (max-width: 1250px) {
+@media (max-height: 800px) {
   .wellcome__text {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 @media (max-width: 1000px) {
@@ -147,9 +147,19 @@ body, ul, li, h1, h2, p {
   height: 60px;
   margin-bottom: 115px;
 }
-@media (max-width: 1250px) {
+@media (max-height: 900px) {
   .header {
     margin-bottom: 95px;
+  }
+}
+@media (max-height: 800px) {
+  .header {
+    margin-bottom: 75px;
+  }
+}
+@media (max-height: 700px) {
+  .header {
+    margin-bottom: 55px;
   }
 }
 @media (max-width: 1000px) {
