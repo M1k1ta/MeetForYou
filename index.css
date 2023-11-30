@@ -22,6 +22,9 @@ body, ul, li, h1, h2, p {
 }
 
 .wellcome {
+  position: absolute;
+  left: 60px;
+  bottom: 30%;
   max-width: 805px;
   margin: 0 60px;
 }
