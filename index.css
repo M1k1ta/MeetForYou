@@ -147,7 +147,7 @@ body, ul, li, h1, h2, p {
   height: 60px;
   margin-bottom: 115px;
 }
-@media (max-height: 1400px) {
+@media (max-height: 800px) {
   .header {
     margin-bottom: 90px;
   }
