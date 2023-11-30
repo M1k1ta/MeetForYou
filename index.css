@@ -157,6 +157,11 @@ body, ul, li, h1, h2, p {
     margin-bottom: 75px;
   }
 }
+@media (max-height: 700px) {
+  .header {
+    margin-bottom: 55px;
+  }
+}
 @media (max-width: 1000px) {
   .header__instagram {
     display: none;
