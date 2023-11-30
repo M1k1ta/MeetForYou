@@ -147,9 +147,14 @@ body, ul, li, h1, h2, p {
   height: 60px;
   margin-bottom: 115px;
 }
+@media (max-height: 900px) {
+  .header {
+    margin-bottom: 95px;
+  }
+}
 @media (max-height: 800px) {
   .header {
-    margin-bottom: 90px;
+    margin-bottom: 75px;
   }
 }
 @media (max-width: 1000px) {
